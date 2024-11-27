@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campus_contacts",
+  "info": {
+    "singularName": "campus-contact",
+    "pluralName": "campus-contacts",
+    "displayName": "Campus : Contacts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.location",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.phone",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "whatsapp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.whatsapp",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.email",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    },
+    "school": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    }
+  }
+}

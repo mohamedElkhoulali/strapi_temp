@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_carousels_manifesto_items",
+  "info": {
+    "displayName": "Élement de manifeste"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 180
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
+    },
+    "Information sur les formats": {
+      "type": "string",
+      "private": true,
+      "default": "Format portrait 2/3, largeur : 500 px hauteur : 750 px."
+    }
+  }
+}

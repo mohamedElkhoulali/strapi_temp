@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_carousels_media",
+  "info": {
+    "displayName": "Images et/ou vidéos YouTube"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "carousels.media-item"
+    },
+    "infos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    }
+  }
+}

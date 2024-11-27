@@ -1,0 +1,114 @@
+{
+  "kind": "singleType",
+  "collectionName": "figs_landing_lives",
+  "info": {
+    "singularName": "figs-landing-live",
+    "pluralName": "figs-landing-lives",
+    "displayName": "[FIGS] Landing Lives",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "labels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.list-item",
+      "max": 2,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.cta",
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.illustrations",
+        "carousels.images",
+        "carousels.key-data",
+        "carousels.media",
+        "lists.checklist",
+        "media.illustrate-video",
+        "media.image",
+        "media.video-player",
+        "texts.accordion",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "texts.unillustrated-text",
+        "carousels.carousel-de-lives",
+        "carousels.temoignages"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

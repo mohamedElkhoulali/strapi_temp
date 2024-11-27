@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_carousels_carousel_de_lives",
+  "info": {
+    "displayName": "Carousel de lives",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "maxLivesCount": {
+      "type": "integer",
+      "default": 6,
+      "min": 1,
+      "max": 15
+    },
+    "carouselInfos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    }
+  }
+}

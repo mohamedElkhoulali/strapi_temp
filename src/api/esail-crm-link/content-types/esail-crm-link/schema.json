@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esail_crm_links",
+  "info": {
+    "singularName": "esail-crm-link",
+    "pluralName": "esail-crm-links",
+    "displayName": "[ESAIL] CRM : Liens",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "contact",
+        "brochure",
+        "registration"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "campusesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "private": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "coursesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "private": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.crm-link-variants",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campus.campus"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    }
+  }
+}

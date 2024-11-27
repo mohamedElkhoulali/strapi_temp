@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_course_skills_units",
+  "info": {
+    "displayName": "Objectifs de compétences"
+  },
+  "options": {},
+  "attributes": {
+    "goals_title": {
+      "type": "string",
+      "required": true,
+      "default": "Objectifs"
+    },
+    "goals_description": {
+      "type": "text"
+    },
+    "goals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.skills-unit-goals"
+    },
+    "program_title": {
+      "type": "string",
+      "default": "Programme"
+    },
+    "program_description": {
+      "type": "text"
+    },
+    "program": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.skills-unit-program"
+    }
+  }
+}

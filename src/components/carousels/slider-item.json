@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_carousels_slider_items",
+  "info": {
+    "displayName": "Slider Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "slideLabel": {
+      "type": "string",
+      "required": false
+    },
+    "slideUri": {
+      "type": "string",
+      "regex": "^[a-zA-Z1-9-_\\/\\?\\=\\&\\.]*$",
+      "required": true
+    }
+  }
+}

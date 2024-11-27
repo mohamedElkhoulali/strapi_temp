@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_esail_news",
+  "info": {
+    "displayName": "Esail News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "esail_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::esail-new.esail-new"
+    }
+  }
+}

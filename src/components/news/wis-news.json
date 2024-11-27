@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_wis_news",
+  "info": {
+    "displayName": "Wis News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "wis_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wis-new.wis-new"
+    }
+  }
+}

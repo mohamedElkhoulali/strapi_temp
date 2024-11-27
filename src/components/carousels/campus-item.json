@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_carousels_campus_items",
+  "info": {
+    "displayName": "Campus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    }
+  }
+}

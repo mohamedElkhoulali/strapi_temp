@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_teams_ifag_teams",
+  "info": {
+    "displayName": "IFAG Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ifag-team.ifag-team"
+    }
+  }
+}

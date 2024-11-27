@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_enrichis",
+  "info": {
+    "singularName": "menu-enrichi",
+    "pluralName": "menu-enrichis",
+    "displayName": "Menu Enrichi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "core.menu",
+        "core.menu-item",
+        "core.menu-dropdown"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "NomMenu": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "navbar",
+        "footer"
+      ],
+      "default": "navbar",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "menu_enrichis"
+    }
+  }
+}

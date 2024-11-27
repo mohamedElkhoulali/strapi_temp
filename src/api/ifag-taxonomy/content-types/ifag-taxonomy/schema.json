@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ifag_taxonomies",
+  "info": {
+    "singularName": "ifag-taxonomy",
+    "pluralName": "ifag-taxonomies",
+    "displayName": "[IFAG] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

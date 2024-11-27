@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "esail_searches",
+  "info": {
+    "singularName": "esail-search",
+    "pluralName": "esail-searches",
+    "displayName": "[ESAIL] Recherche",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

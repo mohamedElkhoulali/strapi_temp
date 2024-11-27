@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iet_taxonomies",
+  "info": {
+    "singularName": "iet-taxonomy",
+    "pluralName": "iet-taxonomies",
+    "displayName": "[IET] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

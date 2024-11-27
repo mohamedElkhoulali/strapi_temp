@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_course_skills_unit_programs",
+  "info": {
+    "displayName": "Skills-Unit-Program",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.skills-unit-program-item"
+    },
+    "skills_unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-skills-unit.course-skills-unit"
+    }
+  }
+}

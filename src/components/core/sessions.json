@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_core_sessions",
+  "info": {
+    "displayName": "Sessions"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "dateStart": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_teams_ihedrea_teams",
+  "info": {
+    "displayName": "IHEDREA Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ihedrea-team.ihedrea-team"
+    }
+  }
+}

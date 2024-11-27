@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cd_schools_infos",
+  "info": {
+    "singularName": "cd-schools-info",
+    "pluralName": "cd-schools-infos",
+    "displayName": "[CD] Ecoles Infos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "school_website": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "header_description": {
+      "type": "text"
+    },
+    "header_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "presentation": {
+      "type": "text"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "carousels.manifesto",
+        "carousels.illustrations",
+        "carousels.media",
+        "carousels.key-data",
+        "carousels.images",
+        "texts.accordion",
+        "texts.unillustrated-text",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.title",
+        "texts.richtext",
+        "texts.quote",
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "lists.checklist",
+        "lists.partners",
+        "media.illustrate-video",
+        "media.image",
+        "media.video-player",
+        "core.section-separator",
+        "carousels.temoignages",
+        "lists.list-with-icons"
+      ]
+    },
+    "text_before_footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo"
+    },
+    "school": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    }
+  }
+}

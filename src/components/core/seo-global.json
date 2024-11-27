@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_core_seo_globals",
+  "info": {
+    "displayName": "Seo global"
+  },
+  "options": {},
+  "attributes": {
+    "metaDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 155
+    },
+    "shareImage": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
+    },
+    "facebookAppId": {
+      "type": "string"
+    },
+    "twitterSite": {
+      "type": "string"
+    },
+    "metas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "core.meta"
+    }
+  }
+}

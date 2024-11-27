@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_carousels_carousel_actus_et_agenda",
+  "info": {
+    "displayName": "Carousel Actus et Agenda"
+  },
+  "options": {},
+  "attributes": {
+    "carouselInfos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    },
+    "news": {
+      "type": "component",
+      "repeatable": false,
+      "component": "news.news-list",
+      "required": true
+    },
+    "events": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-d-evenements",
+      "required": true
+    }
+  }
+}

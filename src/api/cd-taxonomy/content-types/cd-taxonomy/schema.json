@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cd_taxonomies",
+  "info": {
+    "singularName": "cd-taxonomy",
+    "pluralName": "cd-taxonomies",
+    "displayName": "[CD] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

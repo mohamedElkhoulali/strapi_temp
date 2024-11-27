@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_texts_illustrated_texts",
+  "info": {
+    "displayName": "Texte illustré",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "Cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.cta"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "hasBackground": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

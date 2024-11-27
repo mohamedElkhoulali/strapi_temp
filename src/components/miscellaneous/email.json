@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_miscellaneous_emails",
+  "info": {
+    "displayName": "Email"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

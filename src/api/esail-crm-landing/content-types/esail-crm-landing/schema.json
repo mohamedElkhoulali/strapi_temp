@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esail_crm_landings",
+  "info": {
+    "singularName": "esail-crm-landing",
+    "pluralName": "esail-crm-landings",
+    "displayName": "[ESAIL] CRM : Landings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "contact",
+        "brochure",
+        "registration"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "focusImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.media",
+        "course.programs-category",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "texts.accordion",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "core.section-separator",
+        "course.programs",
+        "teams.esail-team",
+        "lists.partners",
+        "media.illustrate-video",
+        "news.news-list",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.temoignages"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

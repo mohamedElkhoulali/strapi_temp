@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_core_menus",
+  "info": {
+    "displayName": "Menu"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "regex": "^[A-Za-z0-9-_.~]*$"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "core.menu-item"
+    }
+  }
+}

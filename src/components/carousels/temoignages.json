@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_carousels_temoignages",
+  "info": {
+    "displayName": "temoignages",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "infos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    },
+    "temoignages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "texts.quote",
+      "required": true,
+      "min": 1
+    }
+  }
+}

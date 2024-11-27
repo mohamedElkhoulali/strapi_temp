@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_lists_list_with_icons",
+  "info": {
+    "displayName": "List With Icons",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "listInfos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    },
+    "listStyle": {
+      "displayName": "listStyle",
+      "type": "component",
+      "repeatable": false,
+      "component": "lists.list-style"
+    },
+    "items": {
+      "displayName": "listWithIconItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.list-with-icon-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

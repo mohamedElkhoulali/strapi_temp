@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_buttons_generic_ctas",
+  "info": {
+    "displayName": "Generic CTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "internal",
+        "external"
+      ],
+      "required": true,
+      "default": "internal"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank",
+        "_self"
+      ],
+      "default": "_self",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_ifag_news",
+  "info": {
+    "displayName": "Ifag News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ifag_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ifag-new.ifag-new"
+    }
+  }
+}

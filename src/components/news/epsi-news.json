@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_epsi_news",
+  "info": {
+    "displayName": "Epsi News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "epsi_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::epsi-new.epsi-new"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vivamundi_landings",
+  "info": {
+    "singularName": "vivamundi-landing",
+    "pluralName": "vivamundi-landings",
+    "displayName": "[VIVAMUNDI] Rubriques",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vivamundi-article.vivamundi-article",
+      "mappedBy": "landing"
+    }
+  }
+}

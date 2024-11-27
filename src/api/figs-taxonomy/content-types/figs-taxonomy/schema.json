@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "figs_taxonomies",
+  "info": {
+    "singularName": "figs-taxonomy",
+    "pluralName": "figs-taxonomies",
+    "displayName": "[FIGS] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

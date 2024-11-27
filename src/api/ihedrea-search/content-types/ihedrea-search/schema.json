@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "ihedrea_searches",
+  "info": {
+    "singularName": "ihedrea-search",
+    "pluralName": "ihedrea-searches",
+    "displayName": "[IHEDREA] Recherche"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    }
+  }
+}

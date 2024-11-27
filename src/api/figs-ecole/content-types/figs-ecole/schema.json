@@ -1,0 +1,116 @@
+{
+  "kind": "singleType",
+  "collectionName": "figs_ecoles",
+  "info": {
+    "singularName": "figs-ecole",
+    "pluralName": "figs-ecoles",
+    "displayName": "[FIGS] Ecoles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "header_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "summary": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.manifesto",
+        "carousels.media",
+        "course.programs",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "news.news-list",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "core.section-separator",
+        "lists.partners",
+        "media.illustrate-video",
+        "texts.unillustrated-text",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.carousel-de-lives",
+        "carousels.temoignages"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

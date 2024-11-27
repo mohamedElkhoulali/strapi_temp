@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_course_teaching_unit_programs",
+  "info": {
+    "displayName": "Teaching-Unit-Program"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.teaching-unit-program-item"
+    }
+  }
+}

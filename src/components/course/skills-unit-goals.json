@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_course_skills_unit_goals",
+  "info": {
+    "displayName": "Skills-Unit-Goals"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

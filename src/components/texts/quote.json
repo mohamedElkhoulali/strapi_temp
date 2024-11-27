@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_texts_quotes",
+  "info": {
+    "displayName": "Citation"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ileri_news",
+  "info": {
+    "singularName": "ileri-new",
+    "pluralName": "ileri-news",
+    "displayName": "[ILERI] Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "focusImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.media",
+        "course.programs-category",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "texts.accordion",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "core.section-separator",
+        "teams.ileri-team",
+        "lists.partners",
+        "media.illustrate-video",
+        "news.news-list",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.temoignages"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "publishDate": {
+      "type": "date"
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "cat_news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ileri-cat-new.ileri-cat-new",
+      "mappedBy": "news"
+    },
+    "campus_infos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ileri-campus-info.ileri-campus-info",
+      "inversedBy": "actualites"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supdecom_taxonomies",
+  "info": {
+    "singularName": "supdecom-taxonomy",
+    "pluralName": "supdecom-taxonomies",
+    "displayName": "[SUPDECOM] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

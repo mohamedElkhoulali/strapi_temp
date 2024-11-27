@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_course_periodes",
+  "info": {
+    "displayName": "Période",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "periodes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::periode.periode"
+    }
+  }
+}

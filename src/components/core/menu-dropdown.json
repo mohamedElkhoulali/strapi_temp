@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_core_menu_dropdowns",
+  "info": {
+    "displayName": "Menu dropdown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.cta"
+    },
+    "description": {
+      "type": "text"
+    },
+    "menu_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-section.menu-section"
+    }
+  }
+}

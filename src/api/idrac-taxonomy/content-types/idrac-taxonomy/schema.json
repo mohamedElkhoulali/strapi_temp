@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idrac_taxonomies",
+  "info": {
+    "singularName": "idrac-taxonomy",
+    "pluralName": "idrac-taxonomies",
+    "displayName": "[IDRAC] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

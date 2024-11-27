@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_core_metas",
+  "info": {
+    "displayName": "Meta"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "property",
+        "name",
+        "itemprop"
+      ]
+    },
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

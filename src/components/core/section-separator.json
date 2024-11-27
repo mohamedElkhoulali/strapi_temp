@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_core_section_separators",
+  "info": {
+    "displayName": "Séparateur de section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_buttons_internal_links",
+  "info": {
+    "displayName": "Lien interne"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "uri": {
+      "type": "string",
+      "regex": "(^(https?:\\/\\/|\\/)(?:www\\.|(?!www))?[^\\s])",
+      "required": true
+    }
+  }
+}

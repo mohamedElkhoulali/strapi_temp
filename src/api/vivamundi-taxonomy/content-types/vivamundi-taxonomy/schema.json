@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vivamundi_taxonomies",
+  "info": {
+    "singularName": "vivamundi-taxonomy",
+    "pluralName": "vivamundi-taxonomies",
+    "displayName": "[VIVAMUNDI] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

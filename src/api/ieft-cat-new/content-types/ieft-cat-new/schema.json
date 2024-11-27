@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ieft_cat_news",
+  "info": {
+    "singularName": "ieft-cat-new",
+    "pluralName": "ieft-cat-news",
+    "displayName": "[IEFT] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ieft-new.ieft-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "igefi_articles",
+  "info": {
+    "singularName": "igefi-article",
+    "pluralName": "igefi-articles",
+    "displayName": "[IGEFI] Articles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "cta": {
+      "type": "string",
+      "default": "Découvrir"
+    },
+    "focusImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.media",
+        "course.programs-category",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "news.news-list",
+        "texts.accordion",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "core.section-separator",
+        "lists.partners",
+        "media.illustrate-video",
+        "texts.unillustrated-text",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.portfolios",
+        "teams.igefi-team",
+        "carousels.temoignages",
+        "lists.list-with-icons"
+      ]
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "landing": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::igefi-landing.igefi-landing",
+      "inversedBy": "children"
+    },
+    "headerCta": {
+      "displayName": "Generic CTA",
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.generic-cta"
+    }
+  }
+}

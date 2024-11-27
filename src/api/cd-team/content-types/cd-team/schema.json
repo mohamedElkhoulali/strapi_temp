@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cd_teams",
+  "info": {
+    "singularName": "cd-team",
+    "pluralName": "cd-teams",
+    "displayName": "[CD] Team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string",
+      "regex": "^[0-9()+ ]*$"
+    }
+  }
+}

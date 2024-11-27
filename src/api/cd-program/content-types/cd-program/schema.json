@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "cd_programs",
+  "info": {
+    "singularName": "cd-program",
+    "pluralName": "cd-programs",
+    "displayName": "[CD] Programmes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "course.programs-category"
+      ],
+      "pluginOptions": {}
+    },
+    "articlesOrder": {
+      "type": "string",
+      "required": false,
+      "private": true,
+      "pluginOptions": {}
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer",
+      "pluginOptions": {}
+    },
+    "summary": {
+      "type": "text",
+      "pluginOptions": {}
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cd-article.cd-article"
+    }
+  }
+}

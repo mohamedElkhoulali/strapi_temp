@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_lists_list_styles",
+  "info": {
+    "displayName": "listStyle",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "default": "none"
+    },
+    "fullWidth": {
+      "type": "boolean",
+      "default": true
+    },
+    "numberOfColumns": {
+      "type": "integer",
+      "default": 2,
+      "max": 6,
+      "min": 1
+    }
+  }
+}

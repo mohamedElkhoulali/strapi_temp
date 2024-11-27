@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_figs_news",
+  "info": {
+    "displayName": "Figs News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "figs_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::figs-new.figs-new"
+    }
+  }
+}

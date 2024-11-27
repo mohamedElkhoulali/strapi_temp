@@ -1,0 +1,126 @@
+{
+  "kind": "collectionType",
+  "collectionName": "periodes",
+  "info": {
+    "singularName": "periode",
+    "pluralName": "periodes",
+    "displayName": "Programme : Périodes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "entryYear": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "price": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "admissionRequirement": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "admissionProcedure": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Initial",
+        "Alternance"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "integrationPeriod": {
+      "type": "boolean",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "details": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "historicPrice": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.period-price-historic",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "programme_blocs_de_competences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-skills-unit.course-skills-unit"
+    },
+    "ecole": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::campus.campus",
+      "inversedBy": "periodes"
+    }
+  }
+}

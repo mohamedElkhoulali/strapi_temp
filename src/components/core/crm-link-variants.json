@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_core_crm_link_variants",
+  "info": {
+    "displayName": "CrmLinkVariants"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "core.crm-link-variant"
+    }
+  }
+}

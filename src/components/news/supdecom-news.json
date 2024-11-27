@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_supdecom_news",
+  "info": {
+    "displayName": "Supdecom News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "supdecom_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::supdecom-new.supdecom-new"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_course_period_price_historics",
+  "info": {
+    "displayName": "Period-Price-Historic"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "max": 3000,
+      "min": 2000
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

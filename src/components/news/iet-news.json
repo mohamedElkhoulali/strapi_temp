@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_iet_news",
+  "info": {
+    "displayName": "Iet News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iet_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::iet-new.iet-new"
+    }
+  }
+}

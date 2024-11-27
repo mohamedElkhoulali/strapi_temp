@@ -1,0 +1,146 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "singularName": "school",
+    "pluralName": "schools",
+    "displayName": "School",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "regex": "^[A-Za-z0-9-_.~]*$",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.phone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.location",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "sameAs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.same-as",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "school"
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::partner.partner",
+      "inversedBy": "schools"
+    },
+    "campuses2": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::campus.campus",
+      "inversedBy": "schools"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "schools"
+    },
+    "campus_landing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus-landing.campus-landing",
+      "mappedBy": "school"
+    },
+    "alternative_logo": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "baseline": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    }
+  }
+}

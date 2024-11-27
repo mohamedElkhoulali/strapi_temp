@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esail_cat_news",
+  "info": {
+    "singularName": "esail-cat-new",
+    "pluralName": "esail-cat-news",
+    "displayName": "[ESAIL] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::esail-new.esail-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

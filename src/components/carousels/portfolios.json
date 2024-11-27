@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_carousels_portfolios",
+  "info": {
+    "displayName": "Portfolios"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "relatedCourse": {
+      "type": "enumeration",
+      "enum": ["all", "course1", "course2"],
+      "default": "all",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.internal-link"
+    }
+  }
+}

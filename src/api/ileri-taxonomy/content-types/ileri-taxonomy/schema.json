@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ileri_taxonomies",
+  "info": {
+    "singularName": "ileri-taxonomy",
+    "pluralName": "ileri-taxonomies",
+    "displayName": "[ILERI] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

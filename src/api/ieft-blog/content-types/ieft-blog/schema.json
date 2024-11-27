@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "ieft_blogs",
+  "info": {
+    "singularName": "ieft-blog",
+    "pluralName": "ieft-blogs",
+    "displayName": "[IEFT] Blogs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "carousels.illustrations",
+        "carousels.media",
+        "carousels.images",
+        "carousels.key-data",
+        "carousels.media-item",
+        "texts.accordion",
+        "texts.unillustrated-text",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.title",
+        "texts.richtext",
+        "texts.quote",
+        "core.section-separator",
+        "buttons.cta",
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "lists.checklist",
+        "media.illustrate-video",
+        "media.image",
+        "media.video-player",
+        "carousels.temoignages"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo"
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    }
+  }
+}

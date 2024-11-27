@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_news_news_lists",
+  "info": {
+    "displayName": "Actualités"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "maxNewsCount": {
+      "type": "integer",
+      "default": 3,
+      "min": 1,
+      "required": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaUri": {
+      "type": "string",
+      "regex": "^[a-zA-Z1-9-_\\\\/\\\\?\\\\=\\\\&\\\\.]*$"
+    }
+  }
+}

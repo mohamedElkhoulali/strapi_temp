@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_core_seo_twitters",
+  "info": {
+    "displayName": "Seo twitter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "imageAlt": {
+      "type": "text",
+      "maxLength": 420
+    },
+    "card": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "summary_large_image"
+      ],
+      "default": "summary"
+    }
+  }
+}

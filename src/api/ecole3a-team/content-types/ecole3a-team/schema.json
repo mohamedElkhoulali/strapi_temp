@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ecole3a_teams",
+  "info": {
+    "singularName": "ecole3a-team",
+    "pluralName": "ecole3a-teams",
+    "displayName": "[ECOLE3A] Team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string",
+      "regex": "^[0-9()+ ]*$"
+    }
+  }
+}

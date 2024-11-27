@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_core_seo_ogs",
+  "info": {
+    "displayName": "Seo og"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

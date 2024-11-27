@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_icl_news",
+  "info": {
+    "displayName": "Icl News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icl_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::icl-new.icl-new"
+    }
+  }
+}

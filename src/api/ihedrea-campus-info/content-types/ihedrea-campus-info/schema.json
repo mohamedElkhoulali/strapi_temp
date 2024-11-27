@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ihedrea_campus_infos",
+  "info": {
+    "singularName": "ihedrea-campus-info",
+    "pluralName": "ihedrea-campus-infos",
+    "displayName": "[IHEDREA] Campus infos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.media",
+        "course.programs-category",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "texts.accordion",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "teams.ihedrea-team",
+        "lists.partners",
+        "core.section-separator",
+        "news.news-list",
+        "course.programs",
+        "media.illustrate-video",
+        "texts.unillustrated-text",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.portfolios",
+        "lists.list-with-icons"
+      ]
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo"
+    },
+    "fullWidthContent": {
+      "type": "dynamiczone",
+      "components": [
+        "carousels.manifesto",
+        "carousels.campus-item",
+        "carousels.illustrations",
+        "carousels.media",
+        "carousels.images",
+        "carousels.key-data",
+        "carousels.campus",
+        "texts.accordion",
+        "texts.unillustrated-text",
+        "texts.chapter",
+        "texts.illustrated-text",
+        "texts.title",
+        "texts.richtext",
+        "texts.quote",
+        "core.section-separator",
+        "news.news-list",
+        "course.programs",
+        "course.programs-category",
+        "buttons.cta",
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "lists.partners",
+        "lists.checklist",
+        "media.illustrate-video",
+        "media.image",
+        "media.video-player",
+        "campus.campus",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.temoignages",
+        "lists.list-with-icons"
+      ]
+    },
+    "actualites": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ihedrea-new.ihedrea-new",
+      "mappedBy": "campus_infos"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    }
+  }
+}

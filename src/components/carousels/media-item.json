@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_carousels_media_items",
+  "info": {
+    "displayName": "Média",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "youtubeId": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

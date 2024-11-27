@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_cd_news",
+  "info": {
+    "displayName": "Cd News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cd_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cd-new.cd-new"
+    }
+  }
+}

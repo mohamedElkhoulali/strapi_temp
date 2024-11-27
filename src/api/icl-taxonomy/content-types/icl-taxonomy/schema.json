@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "icl_taxonomies",
+  "info": {
+    "singularName": "icl-taxonomy",
+    "pluralName": "icl-taxonomies",
+    "displayName": "[ICL] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

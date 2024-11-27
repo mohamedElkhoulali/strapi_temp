@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_course_programs",
+  "info": {
+    "displayName": "Programmes"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "course.programs-header",
+      "required": true
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.programs-category"
+    }
+  }
+}

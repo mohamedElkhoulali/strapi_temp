@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_media_video_players",
+  "info": {
+    "displayName": "Vidéo YouTube"
+  },
+  "options": {},
+  "attributes": {
+    "youtubeId": {
+      "type": "string",
+      "required": true
+    },
+    "posterframe": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

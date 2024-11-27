@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "idrac_searches",
+  "info": {
+    "singularName": "idrac-search",
+    "pluralName": "idrac-searches",
+    "displayName": "[IDRAC] Recherche"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    }
+  }
+}

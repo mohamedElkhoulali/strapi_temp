@@ -1,0 +1,67 @@
+/**
+ * Plugin information: https://market.strapi.io/plugins/@_sh-strapi-plugin-ckeditor
+ * Useful documentation: https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
+ */
+
+globalThis.CKEditorConfig = {
+  configsOverwrite: true,
+  configs: {
+      custom: {
+        styles: `
+        .custom-text-large {
+          font-size: 1.5rem;
+        };
+        .custom-text-small {
+          font-size: 0.5rem;
+        }
+        `,
+        field: {
+          key: "custom",
+          value: "custom",
+          metadatas: {
+            intlLabel: {
+              id: "ckeditor5.preset.custom.label",
+              defaultMessage: "custom version",
+            },
+          },
+        },
+        editorConfig:{
+          plugins: [
+            CKEditor5.essentials.Essentials,            
+            CKEditor5.paragraph.Paragraph,
+            CKEditor5.basicStyles.Bold,
+            CKEditor5.basicStyles.Italic,
+            CKEditor5.basicStyles.Underline,    
+            CKEditor5.link.Link,
+            CKEditor5.list.List,
+          ],
+          toolbar: [
+            'heading',
+            '|',
+            'bold', 'italic', 'underline', 'bulletedList', 'link',
+            '|',
+            'undo', 'redo'
+          ],
+          // image: {
+          //   toolbar: [
+          //     'imageStyle:inline',
+          //     'imageStyle:block',
+          //     'imageStyle:side',
+          //     '|',
+          //     'toggleImageCaption',
+          //     'imageTextAlternative'
+          //   ]
+          // },
+          // table: {
+          //   contentToolbar: [
+          //     'tableColumn',
+          //     'tableRow',
+          //     'mergeTableCells',
+          //     '|',
+          //     'toggleTableCaption'
+          //   ]
+          // }
+        }
+      }
+  },
+}

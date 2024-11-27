@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_course_programs_categories",
+  "info": {
+    "displayName": "Catégorie de programmes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "courses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.programs-item"
+    },
+    "opened": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

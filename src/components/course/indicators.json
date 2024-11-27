@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_course_indicators",
+  "info": {
+    "displayName": "Indicators"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "decimal",
+      "max": 1,
+      "min": 0
+    }
+  }
+}

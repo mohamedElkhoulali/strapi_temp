@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_media_illustrate_videos",
+  "info": {
+    "displayName": "Texte et vidéo"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.video-player",
+      "required": true
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.cta"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "hasBackground": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

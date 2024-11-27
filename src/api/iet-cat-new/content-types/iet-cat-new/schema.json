@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iet_cat_news",
+  "info": {
+    "singularName": "iet-cat-new",
+    "pluralName": "iet-cat-news",
+    "displayName": "[IET] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::iet-new.iet-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

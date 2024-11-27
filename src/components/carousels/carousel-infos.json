@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_carousels_carousel_infos",
+  "info": {
+    "displayName": "Carousel Infos"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleLevel": {
+      "type": "enumeration",
+      "enum": ["h1", "h2", "h3", "h4", "h5", "h6"],
+      "default": "h2"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string",
+      "regex": "^[a-zA-Z1-9-_\\\\/\\\\?\\\\=\\\\&\\\\.]*$"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

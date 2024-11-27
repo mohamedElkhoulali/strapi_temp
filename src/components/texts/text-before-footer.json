@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_texts_text_before_footers",
+  "info": {
+    "displayName": "textBeforeFooter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "text": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "wis_programs",
+  "info": {
+    "singularName": "wis-program",
+    "pluralName": "wis-programs",
+    "displayName": "[WIS] Programmes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "course.programs-category"
+      ]
+    },
+    "articlesOrder": {
+      "type": "string",
+      "required": false,
+      "private": true
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wis-article.wis-article"
+    }
+  }
+}

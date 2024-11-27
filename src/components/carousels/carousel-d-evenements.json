@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_carousels_carousel_d_evenements",
+  "info": {
+    "displayName": "Carousel d'Evénements"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "titleLevel": {
+      "type": "enumeration",
+      "enum": ["h1", "h2", "h3", "h4", "h5", "h6"],
+      "default": "h2"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string",
+      "regex": "^[a-zA-Z1-9-_\\\\/\\\\?\\\\=\\\\&\\\\.]*$"
+    },
+    "maxEventsCount": {
+      "type": "integer",
+      "default": 3,
+      "min": 1
+    }
+  }
+}

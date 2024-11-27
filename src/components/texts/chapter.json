@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_texts_chapters",
+  "info": {
+    "displayName": "Chapitre"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "dockable": {
+      "type": "boolean",
+      "default": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "anchor": {
+      "type": "string",
+      "regex": "^[A-Za-z0-9-]*$"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_carousels_key_data_items",
+  "info": {
+    "displayName": "Donnée clef"
+  },
+  "options": {},
+  "attributes": {
+    "keyValue": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 300
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "secondary"
+      ],
+      "default": "default"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

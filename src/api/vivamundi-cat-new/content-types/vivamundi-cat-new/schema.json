@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vivamundi_cat_news",
+  "info": {
+    "singularName": "vivamundi-cat-new",
+    "pluralName": "vivamundi-cat-news",
+    "displayName": "[VIVAMUNDI] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vivamundi-new.vivamundi-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

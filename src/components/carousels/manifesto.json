@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_carousels_manifestos",
+  "info": {
+    "displayName": "Manifeste"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "carousels.manifesto-item"
+    },
+    "infos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    }
+  }
+}

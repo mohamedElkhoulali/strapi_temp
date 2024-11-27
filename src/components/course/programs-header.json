@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_course_programs_headers",
+  "info": {
+    "displayName": "Header program"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

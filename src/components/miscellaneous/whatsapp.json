@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_miscellaneous_whatsapps",
+  "info": {
+    "displayName": "WhatsApp"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "regex": "^[0-9()+ ]*$",
+      "required": true
+    }
+  }
+}

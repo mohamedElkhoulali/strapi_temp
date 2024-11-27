@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "vivamundi_searches",
+  "info": {
+    "singularName": "vivamundi-search",
+    "pluralName": "vivamundi-searches",
+    "displayName": "[VIVAMUNDI] Recherche"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    }
+  }
+}

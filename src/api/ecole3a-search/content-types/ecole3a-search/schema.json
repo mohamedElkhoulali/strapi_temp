@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "ecole3a_searches",
+  "info": {
+    "singularName": "ecole3a-search",
+    "pluralName": "ecole3a-searches",
+    "displayName": "[ECOLE3A] Recherche"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    }
+  }
+}

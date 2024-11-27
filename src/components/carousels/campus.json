@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_carousels_campuses",
+  "info": {
+    "displayName": "Carousel de campus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.cta"
+    },
+    "summary": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "campuses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "carousels.campus-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

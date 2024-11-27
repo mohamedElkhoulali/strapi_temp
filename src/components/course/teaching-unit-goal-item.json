@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_course_teaching_unit_goal_items",
+  "info": {
+    "displayName": "Teaching-Unit-Goal-Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

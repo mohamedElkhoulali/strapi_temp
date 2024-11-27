@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cd_cat_news",
+  "info": {
+    "singularName": "cd-cat-new",
+    "pluralName": "cd-cat-news",
+    "displayName": "[CD] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cd-new.cd-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

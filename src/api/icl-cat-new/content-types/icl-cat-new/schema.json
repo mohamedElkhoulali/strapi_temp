@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "icl_cat_news",
+  "info": {
+    "singularName": "icl-cat-new",
+    "pluralName": "icl-cat-news",
+    "displayName": "[ICL] Catégories d'Actualités",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::icl-new.icl-new",
+      "inversedBy": "cat_news"
+    }
+  }
+}

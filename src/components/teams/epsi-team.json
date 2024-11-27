@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_teams_epsi_teams",
+  "info": {
+    "displayName": "EPSI Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::epsi-team.epsi-team"
+    }
+  }
+}

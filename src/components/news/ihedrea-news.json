@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_ihedrea_news",
+  "info": {
+    "displayName": "Ihedrea News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ihedrea_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ihedrea-new.ihedrea-new"
+    }
+  }
+}

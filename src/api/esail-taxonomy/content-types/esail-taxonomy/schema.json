@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esail_taxonomies",
+  "info": {
+    "singularName": "esail-taxonomy",
+    "pluralName": "esail-taxonomies",
+    "displayName": "[ESAIL] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

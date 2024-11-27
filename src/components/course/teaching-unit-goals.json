@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_course_teaching_unit_goals",
+  "info": {
+    "displayName": "Teaching-Unit-Goals",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.teaching-unit-goal-item"
+    },
+    "skills_unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-skills-unit.course-skills-unit"
+    }
+  }
+}

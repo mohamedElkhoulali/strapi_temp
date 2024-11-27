@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_ieft_news",
+  "info": {
+    "displayName": "Ieft News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ieft_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ieft-new.ieft-new"
+    }
+  }
+}

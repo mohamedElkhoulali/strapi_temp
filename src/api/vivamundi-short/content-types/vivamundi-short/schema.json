@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vivamundi_shorts",
+  "info": {
+    "singularName": "vivamundi-short",
+    "pluralName": "vivamundi-shorts",
+    "displayName": "[VIVAMUNDI] Short"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

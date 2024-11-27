@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_teams_icl_teams",
+  "info": {
+    "displayName": "ICL Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::icl-team.icl-team"
+    }
+  }
+}

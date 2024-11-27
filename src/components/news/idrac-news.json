@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_idrac_news",
+  "info": {
+    "displayName": "Idrac News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idrac_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::idrac-new.idrac-new"
+    }
+  }
+}

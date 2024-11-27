@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_teams_cd_teams",
+  "info": {
+    "displayName": "CD Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cd-team.cd-team"
+    }
+  }
+}

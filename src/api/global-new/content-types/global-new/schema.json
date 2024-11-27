@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_news",
+  "info": {
+    "singularName": "global-new",
+    "pluralName": "global-news",
+    "displayName": "GlobalNews",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "private": true
+    },
+    "news": {
+      "type": "dynamiczone",
+      "components": [
+        "news.ileri-news",
+        "news.idrac-news",
+        "news.ifag-news",
+        "news.iet-news",
+        "news.epsi-news",
+        "news.esail-news",
+        "news.icl-news",
+        "news.ihedrea-news",
+        "news.igefi-news",
+        "news.supdecom-news",
+        "news.ecole3a-news",
+        "news.wis-news",
+        "news.ieft-news",
+        "news.cd-news",
+        "news.figs-news"
+      ]
+    },
+    "main_news": {
+      "type": "dynamiczone",
+      "components": [
+        "news.ileri-news",
+        "news.idrac-news",
+        "news.ifag-news",
+        "news.iet-news",
+        "news.cd-news",
+        "news.epsi-news",
+        "news.esail-news",
+        "news.icl-news",
+        "news.ihedrea-news",
+        "news.igefi-news",
+        "news.supdecom-news",
+        "news.ecole3a-news",
+        "news.wis-news",
+        "news.ieft-news",
+        "news.figs-news"
+      ],
+      "max": 1
+    },
+    "website": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

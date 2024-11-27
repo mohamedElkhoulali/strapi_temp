@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_course_panel_items",
+  "info": {
+    "displayName": "Panel-Item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

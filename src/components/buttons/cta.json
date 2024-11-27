@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_buttons_ctas",
+  "info": {
+    "displayName": "Bouton d'action"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "uri": {
+      "type": "string",
+      "regex": "(^\\/$|^(\\/)(^$|[a-zA-Z-0-9A-zÀ-ú\\/+&_#?!\\S])+)",
+      "required": true
+    }
+  }
+}

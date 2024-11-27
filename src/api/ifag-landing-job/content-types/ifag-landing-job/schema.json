@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "ifag_landing_jobs",
+  "info": {
+    "singularName": "ifag-landing-job",
+    "pluralName": "ifag-landing-jobs",
+    "displayName": "[IFAG] Landing-jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.external-link",
+        "buttons.internal-link",
+        "lists.checklist",
+        "lists.list-item",
+        "lists.partners",
+        "media.illustrate-video",
+        "media.image",
+        "media.video-player",
+        "texts.accordion",
+        "texts.richtext",
+        "texts.illustrated-text",
+        "texts.title",
+        "core.section-separator",
+        "carousels.key-data"
+      ]
+    },
+    "job_offers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo"
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    }
+  }
+}

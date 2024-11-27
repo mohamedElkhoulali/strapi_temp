@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_course_teaching_unit_program_items",
+  "info": {
+    "displayName": "Teaching-Unit-Program-Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

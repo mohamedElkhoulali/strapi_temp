@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_carousel_illustration_items",
+  "info": {
+    "displayName": "Image avec description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

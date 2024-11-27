@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brochures",
+  "info": {
+    "singularName": "brochure",
+    "pluralName": "brochures",
+    "displayName": "Brochures",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "schoolsEmpty": {
+      "type": "boolean",
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "campusesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "profilesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "coursesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "schools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school.school"
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campus.campus"
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profile.profile"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    }
+  }
+}

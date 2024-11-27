@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "icl_agendas",
+  "info": {
+    "singularName": "icl-agenda",
+    "pluralName": "icl-agendas",
+    "displayName": "[ICL] Agenda",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    }
+  }
+}

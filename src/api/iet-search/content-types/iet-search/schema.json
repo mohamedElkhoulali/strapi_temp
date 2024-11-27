@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "iet_searches",
+  "info": {
+    "singularName": "iet-search",
+    "pluralName": "iet-searches",
+    "displayName": "[IET] Recherche"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_lists_checklists",
+  "info": {
+    "displayName": "Checklist"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.list-item"
+    }
+  }
+}

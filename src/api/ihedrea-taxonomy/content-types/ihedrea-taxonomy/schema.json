@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ihedrea_taxonomies",
+  "info": {
+    "singularName": "ihedrea-taxonomy",
+    "pluralName": "ihedrea-taxonomies",
+    "displayName": "[IHEDREA] Taxonomies"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

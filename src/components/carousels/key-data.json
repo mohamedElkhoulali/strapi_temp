@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_carousels_key_data",
+  "info": {
+    "displayName": "Données clefs"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "carousels.key-data-item"
+    },
+    "infos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "carousels.carousel-infos"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_ileri_news",
+  "info": {
+    "displayName": "Ileri News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ileri_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ileri-new.ileri-new"
+    }
+  }
+}

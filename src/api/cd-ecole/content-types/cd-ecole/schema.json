@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "cd_ecoles",
+  "info": {
+    "singularName": "cd-ecole",
+    "pluralName": "cd-ecoles",
+    "displayName": "[CD] Ecoles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "header_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "summary": {
+      "type": "text"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.seo",
+      "required": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "buttons.download-button",
+        "buttons.external-link",
+        "buttons.internal-link",
+        "carousels.campus",
+        "carousels.illustrations",
+        "carousels.key-data",
+        "carousels.manifesto",
+        "carousels.media",
+        "course.programs",
+        "lists.checklist",
+        "media.image",
+        "media.video-player",
+        "news.news-list",
+        "texts.illustrated-text",
+        "texts.quote",
+        "texts.richtext",
+        "texts.title",
+        "core.section-separator",
+        "lists.partners",
+        "media.illustrate-video",
+        "texts.unillustrated-text",
+        "carousels.carousel-d-evenements",
+        "carousels.carousel-actus-et-agenda",
+        "carousels.temoignages",
+        "lists.list-with-icons"
+      ]
+    },
+    "textBeforeFooter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "texts.text-before-footer"
+    }
+  }
+}

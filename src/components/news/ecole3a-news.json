@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_ecole3a_news",
+  "info": {
+    "displayName": "Ecole3a News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ecole3a_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ecole3a-new.ecole3a-new"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_igefi_news",
+  "info": {
+    "displayName": "Igefi News",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "igefi_actualite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::igefi-new.igefi-new"
+    }
+  }
+}

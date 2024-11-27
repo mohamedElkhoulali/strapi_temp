@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vivamundi_crm_links",
+  "info": {
+    "singularName": "vivamundi-crm-link",
+    "pluralName": "vivamundi-crm-links",
+    "displayName": "[VIVAMUNDI] CRM : Liens",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "contact",
+        "brochure",
+        "registration"
+      ]
+    },
+    "campusesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "private": true
+    },
+    "coursesEmpty": {
+      "type": "boolean",
+      "default": true,
+      "private": true
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": false,
+      "component": "core.crm-link-variants"
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campus.campus"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    }
+  }
+}
